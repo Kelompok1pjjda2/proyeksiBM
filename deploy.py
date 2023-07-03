@@ -76,14 +76,14 @@ if menu == "Prediksi":
     with col2:
         st.markdown("<p style='text-align: center; color: #FFCC29; font-family:arial'>KURS TENGAH BI (AVG)</p>", unsafe_allow_html=True)
         input_kurs = st.number_input('KURS TENGAH BI (AVG)',key=3, value= data[(data['TAHUN'] == tahun) & (data['BULAN'] == bulan)]['KURS TENGAH BI (AVG)'].values[0])
-        for item3 in data['KURS TENGAH BI (AVG)'].unique():
+        for item5 in data['KURS TENGAH BI (AVG)'].unique():
             if item1 == tahun and (item2 == data['BULAN'] == bulan):
                 st.write(input_kurs)
         
         
         st.markdown("<p style='text-align: center; color: #FFCC29; font-family:arial'>GDP</p>", unsafe_allow_html=True)
         input_gdp = st.number_input('GDP',key=4,value= data[(data['TAHUN'] == tahun) & (data['BULAN'] == bulan)]['GDP'].values[0])
-        for item4 in data['GDP'].unique():
+        for item6 in data['GDP'].unique():
             if item1 == tahun and (item2 == data['BULAN'] == bulan):
                 st.write(input_gdp)
         
