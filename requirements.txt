@@ -6,4 +6,4 @@ seaborn
 scikit-learn
 openpyxl
 pickle
-pip==22.3.1
+pip
